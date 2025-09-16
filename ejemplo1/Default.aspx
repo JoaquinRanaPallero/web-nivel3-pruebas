@@ -14,11 +14,10 @@
         <div class="row">
             <div class="col-md-12">
                 <h2>Mensaje Recibido:</h2>
-                <asp:Label ID="ReceivedMessageLabel" runat="server" Text=""></asp:Label>
+                <asp:Label ID="lblUser" runat="server" Text="text"></asp:Label>
             </div>
         </div>
         <%-- FIN DEL CÓDIGO AÑADIDO --%>
-
 
         <div class="row">
             <section class="col-md-4" aria-labelledby="gettingStartedTitle">
