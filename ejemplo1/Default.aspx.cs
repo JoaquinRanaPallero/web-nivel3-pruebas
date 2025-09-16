@@ -11,7 +11,15 @@ namespace ejemplo1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            // Verificar si el parámetro "mensaje" existe en la URL.
+            if (Request.QueryString["mensaje"] != null)
+            {
+                // Obtener el valor del parámetro y decodificarlo.
+                string mensaje = HttpUtility.UrlDecode(Request.QueryString["mensaje"]);
 
+                // Asignar el texto a la etiqueta en la página.
+                ReceivedMessageLabel.Text = mensaje;
+            }
         }
     }
 }

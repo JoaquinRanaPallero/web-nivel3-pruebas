@@ -9,6 +9,17 @@
             <p><a href="http://www.asp.net" class="btn btn-primary btn-md">Learn more &raquo;</a></p>
         </section>
 
+        
+        <%-- AÑADIR CÓDIGO AQUÍ ----%>
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Mensaje Recibido:</h2>
+                <asp:Label ID="ReceivedMessageLabel" runat="server" Text=""></asp:Label>
+            </div>
+        </div>
+        <%-- FIN DEL CÓDIGO AÑADIDO --%>
+
+
         <div class="row">
             <section class="col-md-4" aria-labelledby="gettingStartedTitle">
                 <h2 id="gettingStartedTitle">Getting started</h2>
