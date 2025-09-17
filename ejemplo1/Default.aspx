@@ -5,7 +5,7 @@
     <% if (user != "")
         { %>
     <h2>Ingresaste</h2>
-    <asp:Label ID="lblUser" runat="server" Text="Text"></asp:Label></>
+    <asp:Label ID="lblUser" runat="server" Text=""></asp:Label>
 
     <% }
     else

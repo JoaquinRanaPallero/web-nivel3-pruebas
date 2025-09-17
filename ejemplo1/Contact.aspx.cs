@@ -16,13 +16,13 @@ namespace ejemplo1
         protected void Button1_Click(object sender, EventArgs e)
         {
             // Obtener el texto del TextBox.
-            string texto = TextBox1.Text;
+            string user = TextBox1.Text;
 
             // Codificar el texto para la URL para evitar errores con caracteres especiales.
-            string textoCodificado = HttpUtility.UrlEncode(texto);
+            string userCodificado = HttpUtility.UrlEncode(user);
 
             // Redireccionar a la página Default.aspx y pasar el texto en la URL como un parámetro llamado "mensaje".
-            Response.Redirect("~/Default.aspx?mensaje=" + textoCodificado);
+            Response.Redirect("~/Default.aspx?nombre=" + userCodificado);
         }
     }
 }
