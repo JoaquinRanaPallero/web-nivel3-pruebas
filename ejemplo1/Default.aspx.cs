@@ -15,7 +15,7 @@ namespace ejemplo1
             if (Request.QueryString["mensaje"] != null)
             {
                 // Obtener el valor del parámetro y decodificarlo.
-                // string mensaje = HttpUtility.UrlDecode(Request.QueryString["mensaje"]);
+                string mensaje = HttpUtility.UrlDecode(Request.QueryString["mensaje"]);
                 string user = Request.QueryString["nombre"] != null ? Request.QueryString["nombre"].ToString() : "LOGUEATE";
                 lblUser.Text = user + " tu ingreso fue exitoso!";
 

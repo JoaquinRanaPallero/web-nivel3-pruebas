@@ -13,8 +13,15 @@
         <%-- AÑADIR CÓDIGO AQUÍ ----%>
         <div class="row">
             <div class="col-md-12">
+                
+                <%-- Label para el saludo del usuario --%>
+                <h3><asp:Label ID="lblUser" runat="server" Text=""></asp:Label></h3>
+                <br />
+
+                <%-- Label para el mensaje --%>
                 <h2>Mensaje Recibido:</h2>
-                <asp:Label ID="lblUser" runat="server" Text="text"></asp:Label>
+                <asp:Label ID="ReceivedMessageLabel" runat="server" Text=""></asp:Label>
+            
             </div>
         </div>
         <%-- FIN DEL CÓDIGO AÑADIDO --%>
