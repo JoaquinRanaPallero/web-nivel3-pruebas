@@ -13,7 +13,10 @@ namespace ejemplo1
         public string user { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
-            user = Request.QueryString["nombre"] != null ? Request.QueryString["nombre"].ToString() : "";
+            // user = Request.QueryString["nombre"] != null ? Request.QueryString["nombre"].ToString() : "";
+            
+            user = Session["usuario"] != null ? Session["usuario"].ToString() : "";
+
             lblUser.Text = user + " tu ingreso fue exitoso!";
         
         }

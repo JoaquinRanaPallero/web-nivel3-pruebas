@@ -17,12 +17,19 @@ namespace ejemplo1
         {
             // Obtener el texto del TextBox.
             string user = TextBox1.Text;
-
             // Codificar el texto para la URL para evitar errores con caracteres especiales.
             string userCodificado = HttpUtility.UrlEncode(user);
 
+            string password = txtPassword.Text;
+
+            Session.Add("usuario", userCodificado);
+            Session.Add("pass", password);
+
+
             // Redireccionar a la página Default.aspx y pasar el texto en la URL como un parámetro llamado "mensaje".
-            Response.Redirect("~/Default.aspx?nombre=" + userCodificado);
+            // Response.Redirect("~/Default.aspx?nombre=" + userCodificado + "&pass=" + txtPassword.Text);
+            Response.Redirect("Default.aspx", false);
+
         }
     }
 }

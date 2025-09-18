@@ -6,15 +6,15 @@
         <h3>Your contact page.</h3>
 
 
-        <address>
-            <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-            <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-        </address>
+        
         <%-- CODIGO PARA RECUADRO DE TEXTO  --%>
         <div style="margin-top: 20px;">
             <asp:Label ID="Label1" runat="server" Text="Ingresa tu texto aquí:"></asp:Label>
             <br />
             <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+            <br />
+            <br />
+            <asp:TextBox ID="txtPassword" runat="server"></asp:TextBox>
             <br />
             <asp:Button ID="Button1" runat="server" Text="Enviar" OnClick="Button1_Click" />
             <br />
